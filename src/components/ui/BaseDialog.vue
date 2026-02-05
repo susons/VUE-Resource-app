@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <teleport to="#app">
     <div class="back-drop" @click="$emit('close')"></div>
     <dialog open>
       <header>
@@ -16,7 +16,7 @@
         >
       </menu>
     </dialog>
-  </div>
+  </teleport>
 </template>
 
 <script>

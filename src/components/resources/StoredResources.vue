@@ -6,6 +6,7 @@
       :title="title"
       :description="description"
       :link="link"
+      :id="id"
     />
   </ul>
 </template>

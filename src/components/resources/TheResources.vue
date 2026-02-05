@@ -64,6 +64,7 @@ export default {
     return {
       resources: this.resources,
       addResource: this.addResource,
+      deleteResource: this.deleteResource,
     };
   },
   methods: {
@@ -78,6 +79,11 @@ export default {
         description,
         link,
       });
+    },
+    deleteResource(id) {
+      const index = this.resources.findIndex((r) => r.id === id);
+
+      this.resources.splice(index, 1);
     },
   },
 };
